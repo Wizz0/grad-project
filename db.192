@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	jean-paul.str. root.jean-paul.str. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	jean-paul.str.
+@	IN	PTR	192.168.1.1
+1	IN	PTR	srv.jean-paul.str.
+2	IN	PTR	web.jean-paul.str.

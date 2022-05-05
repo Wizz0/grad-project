@@ -1,0 +1,14 @@
+#/etc/bind/named.conf.default-zone
+
+zone "jean-paul.str" {
+	type master;
+	allow-transfer { any };
+	file "/etc/bind/db.jean-paul";
+};
+
+zone "1.168.192.in-addr.arpa" {
+	type master;
+	allow-transfer { any; };
+	file "/etc/bind/db.192";
+};
+
